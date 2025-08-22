@@ -832,6 +832,14 @@
         .delay-3 {
             animation-delay: 0.6s;
         }
+
+        .p-button{
+            padding: 10px 20px;
+            border-radius: 1rem;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+        }
     </style>
 </head>
 <body>
@@ -860,8 +868,8 @@
             <h1>Transform Your Life Through Optimal Health</h1>
             <p>Discover the path to peak productivity and wellbeing through balanced lifestyle choices</p>
             <div class="cta-buttons">
-                <a href="#medical-tools" class="btn-primary">Explore Tools</a>
-                <a href="#health-info" class="btn-secondary">Learn About Health</a>
+                <a href="#medical-tools" class="btn-primary p-button">Explore Tools</a>
+                <a href="#health-info" class="btn-secondary p-button">Learn About Health</a>
             </div>
         </div>
         <div class="hero-image fade-in delay-1">
@@ -903,7 +911,7 @@
                 <div class="tool-content">
                     <h3>BMI Calculator</h3>
                     <p>Body Mass Index (BMI) is a valuable indicator of healthy weight range. Maintaining a healthy BMI reduces risk of chronic diseases and improves overall quality of life.</p>
-                    <button class="btn-tool" onclick="openModal('bmi-modal')">Calculate Your BMI</button>
+                    <button class="btn-tool p-button" onclick="openModal('bmi-modal')">Calculate Your BMI</button>
                 </div>
             </div>
             
@@ -915,7 +923,7 @@
                 <div class="tool-content">
                     <h3>Symptom Checker</h3>
                     <p>Our symptom checker helps you understand potential causes for your symptoms and when to seek medical attention. Remember, this doesn't replace professional diagnosis.</p>
-                    <button class="btn-tool" onclick="openModal('symptom-modal')">Check Symptoms</button>
+                    <button class="btn-tool p-button" onclick="openModal('symptom-modal')">Check Symptoms</button>
                 </div>
             </div>
             
@@ -927,7 +935,7 @@
                 <div class="tool-content">
                     <h3>Calorie Intake Tracker</h3>
                     <p>Tracking your daily calorie intake helps maintain energy balance. Whether your goal is weight loss, maintenance, or gain, understanding your needs is the first step.</p>
-                    <button class="btn-tool" onclick="openModal('calorie-modal')">Track Calories</button>
+                    <button class="btn-tool p-button" onclick="openModal('calorie-modal')">Track Calories</button>
                 </div>
             </div>
         </div>
@@ -1052,7 +1060,7 @@
                     <div class="form-group">
                         <textarea id="message" placeholder="Your Message" rows="5"></textarea>
                     </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
+                    <button type="submit" class="btn-primary p-button">Send Message</button>
                 </form>
             </div>
         </div>
@@ -1112,7 +1120,7 @@
                             <label for="weight">Weight (kg):</label>
                             <input type="number" id="weight" required>
                         </div>
-                        <button type="submit" class="btn-primary">Calculate</button>
+                        <button type="submit" class="btn-primary p-button">Calculate</button>
                     </form>
                     <div id="bmi-result" class="result">
                         <p>Your BMI: <span id="bmi-value">-</span></p>
@@ -1151,7 +1159,7 @@
                                 <option value="more-than-2-weeks">More than 2 weeks</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn-primary">Check Symptoms</button>
+                        <button type="submit" class="btn-primary p-button">Check Symptoms</button>
                     </form>
                     <div id="symptom-result" class="result">
                         <h4>Possible Conditions:</h4>
@@ -1218,7 +1226,7 @@
                                 <option value="gain">Gain weight</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn-primary">Calculate</button>
+                        <button type="submit" class="btn-primary p-button">Calculate</button>
                     </form>
                     <div id="calorie-result" class="result">
                         <h4>Your Daily Calorie Needs:</h4>
